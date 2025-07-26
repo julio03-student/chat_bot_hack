@@ -1,0 +1,126 @@
+[
+    {
+        "intent": "registro_cliente",
+        "questions": [
+            "¿Cómo me registro en INGE-LEAN?",
+            "¿Qué información necesito para registrarme?",
+            "¿Puedo registrarme en línea?",
+            "¿Necesito registrarme para recibir ayuda con automatización?",
+            "¿Cómo puedo recibir soporte en ciberseguridad?",
+            "¿Puedo cambiar mis datos después de registrarme?",
+            "¿Es obligatorio registrarse para usar los servicios de INGE-LEAN?",
+            "¿Puedo recibir una consulta sobre automatización después de registrarme?",
+            "¿El registro me da acceso a todos los servicios?",
+            "¿Cómo puedo registrar mi empresa en INGE-LEAN?"
+        ],
+        "answer": "El registro se realiza a través de nuestro portal web. Solo necesitas proporcionar tus datos básicos y detalles sobre tu empresa para acceder a los servicios de optimización y automatización industrial."
+    },
+    {
+        "intent": "servicios_automatizacion",
+        "questions": [
+            "¿Qué tipos de procesos puede automatizar INGE-LEAN?",
+            "¿Qué beneficios trae la automatización con INGE-LEAN?",
+            "¿Qué tecnologías usan para automatizar procesos industriales?",
+            "¿Qué incluye el servicio de automatización de INGE-LEAN?",
+            "¿Cuánto tiempo toma automatizar un proceso?",
+            "¿Qué tipo de máquinas puedo automatizar?",
+            "¿Cómo se integran los sistemas de control en la automatización?",
+            "¿Cómo automatizan el acceso vehicular en parqueaderos?",
+            "¿Qué robots usan en la automatización?",
+            "¿Cómo mejoran la productividad con la automatización?"
+        ],
+        "answer": "INGE-LEAN ofrece soluciones completas de automatización industrial, que incluyen diagnóstico del proceso, diseño de mejoras, programación de sistemas de control y automatización con PLCs, robots y otras tecnologías avanzadas para optimizar la productividad y seguridad."
+    },
+    {
+        "intent": "servicios_hardware",
+        "questions": [
+            "¿Qué servicios de hardware ofrece INGE-LEAN?",
+            "¿Cómo diseñan las placas electrónicas personalizadas?",
+            "¿Qué es la interconexión digital de objetos?",
+            "¿Cómo ayudan los sistemas embebidos en la automatización?",
+            "¿Qué circuitos electrónicos pueden desarrollar?",
+            "¿Cómo programan los sistemas embebidos?",
+            "¿Cómo integrar la automatización con el hardware?",
+            "¿Qué incluye el servicio de desarrollo de hardware?",
+            "¿Puedo personalizar los sistemas electrónicos para mi empresa?",
+            "¿Cómo optimizan los procesos con soluciones de hardware?"
+        ],
+        "answer": "INGE-LEAN ofrece desarrollo de hardware, incluyendo el diseño de placas electrónicas personalizadas (PCBs), sistemas embebidos, circuitos electrónicos y más, para garantizar la conectividad y optimización de los procesos industriales."
+    },
+    {
+        "intent": "servicios_software",
+        "questions": [
+            "¿Qué tipo de software desarrolla INGE-LEAN?",
+            "¿Cómo personalizan el software según mi empresa?",
+            "¿Ofrecen software para mejorar la eficiencia operativa?",
+            "¿Por qué desarrollar software a medida con INGE-LEAN?",
+            "¿Puedo integrar el software con mis sistemas actuales?",
+            "¿Ofrecen aplicaciones en la nube para optimizar procesos?",
+            "¿El software incluye herramientas de análisis de datos?",
+            "¿Cómo usan la visión por computador y aprendizaje automático?",
+            "¿Qué sistemas empresariales pueden desarrollar?",
+            "¿Cómo mejora la productividad el software de INGE-LEAN?"
+        ],
+        "answer": "INGE-LEAN desarrolla software a medida, diseñado para adaptarse a las necesidades específicas de tu empresa. Ofrecemos soluciones flexibles y escalables que optimizan la eficiencia operativa, integrando tecnologías como visión por computador y análisis de datos."
+    },
+    {
+        "intent": "casos_exito",
+        "questions": [
+            "¿Qué casos de éxito tiene INGE-LEAN?",
+            "¿Cómo mejoraron la productividad otras empresas?",
+            "¿Qué resultados se lograron en proyectos anteriores?",
+            "¿Puedo ver testimonios de clientes?",
+            "¿Cómo aumentó la productividad un 30% a 43%?",
+            "¿Tienen casos de éxito en desarrollo de hardware?",
+            "¿Qué resultados traen las soluciones de automatización?",
+            "¿Cómo mejoraron la toma de decisiones en los casos de éxito?",
+            "¿Cómo impactaron las soluciones de INGE-LEAN en la industria 4.0?",
+            "¿Qué mejoras han logrado los clientes de INGE-LEAN?"
+        ],
+        "answer": "INGE-LEAN ha demostrado éxito en mejorar la productividad y los tiempos de respuesta de empresas mediante soluciones innovadoras, como el caso donde optimizamos un variador de velocidad, mejorando la productividad entre un 30% y 43%."
+    },
+    {
+        "intent": "tarjetas_nfc",
+        "questions": [
+            "¿Qué son las tarjetas NFC?",
+            "¿Cómo funcionan las tarjetas NFC de INGE-LEAN?",
+            "¿Qué aplicaciones tienen las tarjetas NFC en la automatización?",
+            "¿Las tarjetas NFC incluyen códigos QR?",
+            "¿Cómo usar las tarjetas NFC para automatizar el acceso vehicular?",
+            "¿Cuáles son las ventajas de las tarjetas NFC?",
+            "¿Son personalizables las tarjetas NFC?",
+            "¿Cómo facilitan las tarjetas NFC la transferencia de datos?",
+            "¿Puedo integrar las tarjetas NFC en sistemas de control de acceso?",
+            "¿INGE-LEAN da soporte para usar las tarjetas NFC?"
+        ],
+        "answer": "Las tarjetas NFC de INGE-LEAN permiten la transferencia de datos mediante proximidad, facilitando el intercambio de información. Son ideales para automatizar el acceso vehicular, controlar procesos industriales y optimizar la seguridad, e incluyen códigos QR para visualización de datos."
+    },
+    {
+        "intent": "ciberseguridad",
+        "questions": [
+            "¿Qué servicios de ciberseguridad ofrece INGE-LEAN?",
+            "¿Cómo protege INGE-LEAN mis sistemas industriales de ataques?",
+            "¿Qué tecnologías usan para la ciberseguridad?",
+            "¿Cómo protegen los datos de mi empresa?",
+            "¿INGE-LEAN realiza auditorías de ciberseguridad?",
+            "¿Puedo confiar en INGE-LEAN para proteger mis infraestructuras?",
+            "¿Cómo protegen los sistemas de control industrial?",
+            "¿INGE-LEAN ofrece asesoría en ciberseguridad?",
+            "¿Qué medidas de seguridad implementan en la industria 4.0?",
+            "¿Cómo protegen los sistemas de automatización de parqueaderos?"
+        ],
+        "answer": "INGE-LEAN ofrece servicios de ciberseguridad completos, implementando tecnologías avanzadas para proteger tanto las infraestructuras industriales como los datos sensibles de tus sistemas, además de realizar auditorías y ofrecer soluciones de prevención de ataques."
+    },
+    {
+        "intent": "que_hacen",
+        "questions": [
+            "¿Qué hacen?",
+            "¿Qué hace INGE-LEAN?",
+            "¿Qué servicios maneja INGE-LEAN?",
+            "¿Qué servicios ofrece INGE-LEAN?",
+            "¿Qué servicios tiene INGE-LEAN?",
+            "¿Qué me pueden ofrecer como cliente?"
+        ],
+        "answer": "INGE-LEAN ofrece soluciones innovadoras y eficientes para la industria 4.0, integrando desarrollo de hardware, creación de software e implementación de automatización industrial. Incluye servicios de automatización de procesos industriales y de parqueaderos, desarrollo de hardware (diseño de placas electrónicas personalizadas, sistemas embebidos y circuitos electrónicos), desarrollo de software a medida (visión por computador, aplicaciones en la nube y análisis de datos), servicios de ciberseguridad y tarjetas NFC para optimizar tus procesos y garantizar la conectividad."
+    }
+]
