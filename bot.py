@@ -15,6 +15,8 @@ offset = None  # para no reprocesar updates viejos
 ultima_actividad = {}
 # Diccionario para rastrear si ya se envió el mensaje de inactividad
 mensaje_inactividad_enviado = {}
+# Set para rastrear usuarios que finalizaron la conversación
+usuarios_finalizados = set()
 
 def main():
     global offset
@@ -34,9 +36,13 @@ def main():
 
         ahora = time.time()
 
-        # Verificar inactividad de usuarios
+        # Verificar inactividad de usuarios (solo si no finalizaron)
         for chat_id, timestamp in list(ultima_actividad.items()):
-            if ahora - timestamp > 60 and not mensaje_inactividad_enviado.get(chat_id, False):
+            if (
+                chat_id not in usuarios_finalizados and
+                ahora - timestamp > 60 and
+                not mensaje_inactividad_enviado.get(chat_id, False)
+            ):
                 payload = {
                     "chat_id": chat_id,
                     "text": "¿Sigues ahí? Si deseas finalizar la conversación, solo escríbeme 'adiós' o continúa preguntando."
@@ -57,6 +63,10 @@ def main():
             chat_id = msg["chat"]["id"]
             texto = msg["text"].strip()
 
+            # Si el usuario ya había finalizado y vuelve a interactuar, lo quitamos del set
+            if chat_id in usuarios_finalizados:
+                usuarios_finalizados.remove(chat_id)
+
             # Actualizar última actividad
             ultima_actividad[chat_id] = time.time()
             mensaje_inactividad_enviado[chat_id] = False  # Reiniciar bandera al recibir mensaje
@@ -71,6 +81,7 @@ def main():
                 )
             elif texto.lower() in ["adiós", "adios", "bye", "fin"]:
                 reply = "¡Hasta luego! Si necesitas algo más, no dudes en escribirme."
+                usuarios_finalizados.add(chat_id)  # Marcar usuario como finalizado
             else:
                 # Usamos el método de tu clase para predecir y generar respuesta
                 reply = chatbot.predecir_intencion(texto_usuario=texto)
